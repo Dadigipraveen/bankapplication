@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.ct.nsa.entity.Scholarship;
 
 public class Client {
-
+int a=123;
 	 static String scholorholderName;
 	 static String university;
  static String type;
