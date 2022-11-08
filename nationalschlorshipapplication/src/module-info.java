@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author dadig
- *
- */
-module nationalschlorshipapplication {
-}

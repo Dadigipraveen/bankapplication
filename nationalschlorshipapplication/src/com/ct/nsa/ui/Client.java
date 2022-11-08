@@ -5,13 +5,14 @@ import java.util.Scanner;
 import com.ct.nsa.entity.Scholarship;
 
 public class Client {
-int a=123;
 	 static String scholorholderName;
 	 static String university;
  static String type;
    static String address=null;
 	static int yearopen;
 	static Object service;
+	
+	private static Scanner sc;
 	private static Scholarship scholar;
 
 	public static void main(String[] args) {
@@ -29,7 +30,7 @@ int a=123;
 		 String principal = null;
 		 String status = null;	
 		 
-		 Scanner sc = new Scanner(System.in);
+		 sc = new Scanner(System.in);
 		 System.out.println("***National scholorship***");
 		while(true) {
 			System.out.println("1.Create National Scholarship Application");
@@ -61,8 +62,8 @@ int a=123;
 				
 			case 2:
 				System.out.println("Enter Your scholarship code:");
-		         sc.next();
-		     	System.out.println(getscholarshipdetailas(scholar));
+		        code=sc.nextInt();
+		     	System.out.println(getscholarshipdetailas(code));
 	
 				break;
 				
@@ -87,14 +88,14 @@ int a=123;
      
 	}
 
-	private static char[] getscholarshipdetailas(Scholarship scholar2) {
+	private static char[] getscholarshipdetailas(int code) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	private static char[] getAccountDetails(Scholarship scholar) {
-
-		return null;
+	
 	}
 	
-}
+	
+	
+
